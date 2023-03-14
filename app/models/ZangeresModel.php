@@ -13,7 +13,7 @@ class ZangeresModel
     {
         $sql = 'SELECT  Id
                        ,Name
-                FROM    Country';
+                FROM    Zangeres';
 
         $this->db->query($sql);
 
