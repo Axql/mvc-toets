@@ -19,7 +19,7 @@ class ZangeresModel
                        ,Leeftijd
 
                 FROM    Zangeres
-                ORDER BY NettoWaarde';
+                ORDER BY NettoWaarde desc';
 
         $this->db->query($sql);
 
