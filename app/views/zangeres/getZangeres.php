@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../../public/css/style.css">
 </head>
 <body>
     <h3><?= $data['title']; ?></h3>
 
-    <table border='1'>
+    <table>
         <thead>
             <th>Id</th>
             <th>Naam</th>
