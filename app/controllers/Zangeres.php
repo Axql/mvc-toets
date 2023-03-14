@@ -36,7 +36,7 @@ class Zangeres extends BaseController
         }
 
         $data = [
-            'title' => 'Overzicht landen van Europa',
+            'title' => 'top 5 zangeressen van de wereld',
             'tableRows' => $tableRows
         ];
 

@@ -13,10 +13,10 @@
         <thead>
             <th>Id</th>
             <th>Naam</th>
-            <th></th>
-            <th>Naam</th>
-            <th>Id</th>
-            <th>Naam</th>
+            <th>NettoWaarde</th>
+            <th>Land</th>
+            <th>Mobiel</th>
+            <th>Leeftijd</th>
         </thead>
         <tbody>
             <?= $data['tableRows']; ?>

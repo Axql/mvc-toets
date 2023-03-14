@@ -18,7 +18,8 @@ class ZangeresModel
                        ,Mobiel
                        ,Leeftijd
 
-                FROM    Zangeres';
+                FROM    Zangeres
+                ORDER BY NettoWaarde';
 
         $this->db->query($sql);
 
