@@ -2,32 +2,36 @@
 
 class Zangeres extends BaseController
 {
-    private $zangeresModel;
+    private $ZangeresModel;
 
     public function __construct()
     {
-        $this->zangeresModel = $this->model('ZangeresModel');
+        $this->ZangeresModel = $this->model('ZangeresModel');
     }
 
     public function index()
     {
         $data = [
-            'title' => 'Overzicht landen van de wereld'
+            'title' => 'top 5 zangeressen van de wereld'
         ];
 
-        $this->view('zangeres/index', $data);
+        $this->view('angeres/index', $data);
     }
 
 
     public function getZangeres($id1=NULL, $id2=NULL) 
     {
-        $countries = $this->zangeresModel->zangeresModel();
+        $zangeres = $this->ZangeresModel->getZangeres();
 
         $tableRows = "";
-        foreach ($countries as $value) {
+        foreach ($zangeres as $value) {
             $tableRows .= "<tr>
                                 <td>$value->Id</td>
-                                <td>$value->Name</td>
+                                <td>$value->Naam</td>
+                                <td>$value->NettoWaarde</td>
+                                <td>$value->Land</td>
+                                <td>$value->Mobiel</td>
+                                <td>$value->Leeftijd</td>
                            </tr>";
         }
 

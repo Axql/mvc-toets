@@ -13,6 +13,10 @@
         <thead>
             <th>Id</th>
             <th>Naam</th>
+            <th></th>
+            <th>Naam</th>
+            <th>Id</th>
+            <th>Naam</th>
         </thead>
         <tbody>
             <?= $data['tableRows']; ?>
